@@ -1,0 +1,49 @@
+<!--html--> 
+<h3>Add Event</h3>
+<form id="eventForm">
+    <input type="date" id="eventDate" required>
+    <input type="text" id="eventDescription" placeholder="Description" required>
+    <button type="submit">Add Event</button>
+</form>
+<h3>Upcoming Events</h3>
+<div id="eventsContainer"></div>
+
+<!--js-->
+<script>
+    document.getElementById('eventForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const date = document.getElementById('eventDate').value;
+        const description = document.getElementById('eventDescription').value;
+        
+        fetch('http://localhost:3000/api/events', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ date, description })
+        }).then(response => {
+            if (response.ok) {
+                return loadEvents();
+            }
+            throw new Error('Failed to add event');
+        }).catch(error => alert(error.message));
+    });
+    
+    function loadEvents() {
+        fetch('http://localhost:3000/api/events')
+            .then(response => response.json())
+            .then(events => {
+                const container = document.getElementById('eventsContainer');
+                container.innerHTML = ''; // Clear existing events
+                events.forEach(event => {
+                    const eventDiv = document.createElement('div');
+                    eventDiv.className = 'event';
+                    eventDiv.innerHTML = `<strong>${event.date}</strong>: ${event.description}`;
+                    container.appendChild(eventDiv);
+                });
+            })
+            .catch(error => console.error('Error loading the events:', error));
+    }
+    
+    document.addEventListener('DOMContentLoaded', loadEvents);
+    </script>
