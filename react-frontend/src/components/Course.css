@@ -1,0 +1,33 @@
+.course-details {
+    margin-bottom: 20px;
+  }
+  
+  .course-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .course-content {
+    margin-top: 20px;
+  }
+  
+  .course-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .course-progress {
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+  .progress-filled {
+    background-color: #4caf50;
+    height: 20px;
+  }
+  

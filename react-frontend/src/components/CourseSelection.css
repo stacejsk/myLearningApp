@@ -1,0 +1,41 @@
+.course-selection {
+    margin-bottom: 20px;
+  }
+  
+  .course-selection h2 {
+    margin-bottom: 10px;
+  }
+  
+  .course-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+  }
+  
+  .course-card h3 {
+    margin: 0 0 10px;
+  }
+  
+  .course-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .course-link:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,19 @@
+.sidebar {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-section {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.events-section {
+  flex: 1;
+  overflow-y: auto;
+}

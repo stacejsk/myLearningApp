@@ -1,0 +1,10 @@
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.main-content > div {
+  margin-bottom: 20px;
+}

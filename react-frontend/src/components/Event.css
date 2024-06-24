@@ -1,0 +1,20 @@
+.events {
+  overflow-y: auto;
+}
+
+.events .event {
+  margin: 15px 0;
+}
+
+.events .icon {
+  margin-right: 10px;
+}
+
+.show-more {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
