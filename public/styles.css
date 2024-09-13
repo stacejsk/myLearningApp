@@ -156,7 +156,7 @@ button:hover {
     object-fit: cover;
 }
 .profile-name, .profile-title {
-
+    width:auto;
 }
 .profile-name{
     font-size:14px;
@@ -202,7 +202,7 @@ button:hover {
 }
 
 .navigation a:hover {
-
+   color:#15d61c; 
 }
 
 .animation{
