@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Learning Managment System
+# Learning Management System to create
 
 ## Step 1: Project Setup
 
