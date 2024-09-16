@@ -1,5 +1,5 @@
 
-# Learning Management System to create
+# Learning Management System
 
 ## Step 1: Project Setup
 
@@ -86,3 +86,6 @@ node server.js
 
 ## Step 4: Testing
 Open your web browser and navigate to http://localhost:3000.
+
+# myLearningApp
+my learning app
